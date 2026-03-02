@@ -13,7 +13,7 @@ const todoCard=document.createElement('div');
 todoCard.innerHTML=
 `
 <div class='todo-card'>
-<p>${todo.completed}</p>
+<p>${todo.completed===true ? `<i class="fa-solid fa-square-check"></i>`:`<i class="fa-regular fa-square-check"></i> `} </p>
 <h2>${todo.title}</h2>
 </div>
 `;
