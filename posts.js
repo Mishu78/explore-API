@@ -40,7 +40,8 @@ const displayPost =(posts)=>{
     const postContainer = document.getElementById('post-container');
     postContainer.innerText='';
  posts.forEach(post=>{
-    
+    const postCard=document.createElement('div');
+    postCard.innerHTML=``
  })
 }
     
