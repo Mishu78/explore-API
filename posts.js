@@ -41,7 +41,15 @@ const displayPost =(posts)=>{
     postContainer.innerText='';
  posts.forEach(post=>{
     const postCard=document.createElement('div');
-    postCard.innerHTML=``
+    postCard.innerHTML=`
+    <div class="post-card">
+            <h2>This is a sample title</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt voluptatum distinctio ipsa, unde vitae eveniet at magnam sint itaque cumque neque ea quidem hic inventore modi quod esse iure architecto.</p>
+        </div>
+        `;
+        //3.add to the container
+
+        postContainer.append(postCard);
  })
 }
     
