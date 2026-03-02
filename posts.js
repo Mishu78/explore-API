@@ -7,6 +7,7 @@ const loadPost = () =>{
  const displayPost=(posts)=>{
     //1.get the container
   const postContainer=document.getElementById('post-container');
+  postContainer.innerText='';
   //console.log(postContainer);
 
     posts.forEach(post=>{
