@@ -8,8 +8,11 @@ const loadPost = () =>{
     // posts.forEach(post=>{
     //     console.log(post);
     // })
-    for(let post of posts){
-        console.log(post);
+    // for(let post of posts){
+    //     console.log(post);
+    // }
+    for(let i =0;i<=posts.length;i++){
+        console.log(posts[i]);
     }
     }
     
