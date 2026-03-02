@@ -8,7 +8,16 @@ const displayTodo =(todos)=>{
     todoContainer.innerText='';
     
     todos.forEach(todo=>{
-console.log(todo);
-    })
-}
+//console.log(todo);
+const todoCard=document.createElement('div');
+todoCard.innerHTML=
+`
+<div class='todo-card'>
+<p>${todo.completed}</p>
+<h2>${todo.title}</h2>
+</div>
+`;
+todoContainer.append(todoCard);
+    });
+};
 loadTodo();
