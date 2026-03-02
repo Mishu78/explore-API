@@ -5,9 +5,11 @@ const loadPost = () =>{
 };
 
  const displayPost=(posts)=>{
-    posts.forEach(post=>{
+    // posts.forEach(post=>{
+    //     console.log(post);
+    // })
+    for(let post of posts){
         console.log(post);
-    })
-
+    }
     }
     
