@@ -43,8 +43,8 @@ const displayPost =(posts)=>{
     const postCard=document.createElement('div');
     postCard.innerHTML=`
     <div class="post-card">
-            <h2>This is a sample title</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt voluptatum distinctio ipsa, unde vitae eveniet at magnam sint itaque cumque neque ea quidem hic inventore modi quod esse iure architecto.</p>
+            <h2>${post.title}</h2>
+            <p>${post.body}</p>
         </div>
         `;
         //3.add to the container
@@ -52,4 +52,5 @@ const displayPost =(posts)=>{
         postContainer.append(postCard);
  })
 }
+loadPost();
     
